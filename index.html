@@ -2,112 +2,258 @@
 <html lang="ru-ru">
   <head>
     <meta charset="utf-8" />
-    <title>Part2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">.
+    <title>High-rise</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <header id="header">
+      <div class="initial_header_container">
+        <div class="logo_block"><span>High-rise</span></div>
+        <nav class="nav_block header_nav_block">
+          <ul class="nav_block_list header_nav_list">
+            <li class="nav_block_list_item">
+              <a href="#article_section">
+                <span class="list_item_text">Discription</span></a
+              >
+            </li>
+            <li class="nav_block_list_item">
+              <a href="#form"> <span class="list_item_text">Form</span></a>
+            </li>
+            <li class="nav_block_list_item">
+              <a href="#contacts">
+                <span class="list_item_text">Contacts</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="burger">
+          <img
+            class="burger_icon"
+            src="/img/icon/HamburgerMd.svg"
+            alt="burger menu"
+          />
+        </div>
+      </div>
+    </header>
 
+    <main class="main_section">
+      <div class="main_left_section">
+        <div class="main_left_initial_section">
+          <h1 class="main_title">The high-rise building of your dreams</h1>
+          <h3 class="main_title_discription">
+            You've never seen anything like this before
+          </h3>
+          <ul class="main_discription_list">
+            <li class="discription_list_item">
+              <img
+                class="discription_list_item_icon"
+                src="/img/icon/CheckBox.svg"
+                alt="item icon"
+              />
+              <span> A large glass building for only <b>$10,000</b> </span>
+            </li>
+            <li class="discription_list_item">
+              <img
+                class="discription_list_item_icon"
+                src="/img/icon/CheckBox.svg"
+                alt="item icon"
+              />
+              <span>
+                <b>30% </b>is refunded by cashback to the tinkoff card</span
+              >
+            </li>
+            <li class="discription_list_item">
+              <img
+                class="discription_list_item_icon"
+                src="/img/icon/CheckBox.svg"
+                alt="item icon"
+              />
+              <span>
+                And another <b>17%</b> of grandmothers want the same
+                thing.</span
+              >
+            </li>
+            <li class="discription_list_item"></li>
+          </ul>
+          <button class="button main_section_button">PUSH ME</button>
+        </div>
+      </div>
+      <div class="main_right_section"></div>
+    </main>
 
-<div class="container1">
-    <svg width="100%" height="100%"   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-      <foreignObject width="100%" height="100%">
-        <video autoplay muted loop style="width: 100%; height: 100%; object-fit: cover;">
-          <source src="/video/video.mp4" type="video/mp4">
-        </video>
+    <article class="article_section" id="article_section">
+      <div class="article_block left_article_block"></div>
+      <div class="article_block center_article_block">
+        <ul class="main_discription_list">
+          <li class="article_discription_list_item">
+            <img
+              class="article_discription_list_item_icon"
+              src="/img/icon/Crown.svg"
+              alt="item icon"
+            />
+            <span>
+              The nearest Pyaterochka is only 15 kilometers from your house
+            </span>
+          </li>
+          <li class="article_discription_list_item">
+            <img
+              class="article_discription_list_item_icon"
+              src="/img/icon/Crown.svg"
+              alt="item icon"
+            />
+            <span>
+              Kindergartens, schools, cinemas, clubs, and a maximum security
+              prison are within walking distance</span
+            >
+          </li>
+          <li class="article_discription_list_item">
+            <img
+              class="article_discription_list_item_icon"
+              src="/img/icon/Crown.svg"
+              alt="item icon"
+            />
+            <span>
+              There's a great cheburechnaya on the corner of the house</span
+            >
+          </li>
+          <li class="article_discription_list_item">
+            <img
+              class="article_discription_list_item_icon"
+              src="/img/icon/Crown.svg"
+              alt="item icon"
+            />
+            <span>
+              I'm tired of writing this nonsense. I hope no one reads all
+              this.</span
+            >
+          </li>
+          <li class="discription_list_item"></li>
+          <button class="button article_section_button">PUSH ME</button>
+        </ul>
+      </div>
+      <div class="article_block right_article_block"></div>
+    </article>
 
-      </foreignObject>
-      <defs>
-        <mask id="block-mask1">
-          <rect x="0" y="0" width="100%" height="100%" fill="white" />
-        
-          <rect id="rect1" x="32%" y="10%" width="42.5%" height="10%" fill="black" />
-          <rect id="rect2" x="32%" y="11%" width="42.5%" height="9%" fill="black" />
-          <rect id="rect3" x="32%" y="12.5%" width="42.5%" height="8%" fill="black" />
+    <section class="form_section">
+      <div class="left_form_section">
+        <form class="form" id="form" method="post" target="_blank">
+          <fieldset>
+            <legend class="legend_title">Заполни форму</legend>
+            <ul class="form_ul">
+              <li class="form_ul_item">
+                <input
+                  class="window_input"
+                  type="name"
+                  name="name"
+                  placeholder="Name"
+                  id="number"
+                  required
+                />
+              </li>
+              <li class="form_ul_item">
+                <input
+                  class="window_input"
+                  type="email"
+                  name="mail"
+                  placeholder="E-mail"
+                  id="email"
+                  required
+                />
+              </li>
+              <li class="form_ul_item">
+                <input
+                  type="checkbox"
+                  name="Privacy policy"
+                  id="Privacy policy"
+                />
+                <label for="books">I accept Privacy policy</label>
+              </li>
+              <li class="form_ul_item">
+                <button class="form_button" type="submit">Отправить</button>
+              </li>
+            </ul>
+          </fieldset>
+        </form>
+      </div>
+      <div class="right_form_section"> </div>
+    </section>
 
-          <rect id="rect1" x="26%" y="25%" width="26.5%" height="10%" fill="black"/>
-          <rect id="rect2" x="26%" y="26%" width="26.5%" height="9%" fill="black"/>
-          <rect id="rect3" x="26%" y="27.5%" width="26.5%" height="8%" fill="black"/>
+    <footer>
+      <nav class="nav_block footer_nav_block">
+        <ul class="nav_block_list footer_nav_list">
+          <li class="nav_block_list_item">
+            <a href="#article_section">
+              <span class="list_item_text">Discription</span></a
+            >
+          </li>
+          <li class="nav_block_list_item">
+            <a href="#form"> <span class="list_item_text">Form</span></a>
+          </li>
+          <li class="nav_block_list_item">
+            <a href="#contacts">
+              <span class="list_item_text">Contacts</span></a
+            >
+          </li>
+        </ul>
+      </nav>
 
-          <rect id="rect1" x="31.5%" y="40%" width="36%" height="10%" fill="black" />
-          <rect id="rect2" x="31.5%" y="41%" width="36%" height="9%" fill="black" />
-          <rect id="rect3" x="31.5%" y="42.5%" width="36%" height="8%" fill="black" />
+      <div id="contacts" class="footer_contact_section">
+        <div class="logo_block footer_contact_section_item item1">
+          <span>High-rise</span>
+        </div>
+        <div
+          class="footer_section_link_block footer_contact_section_item item2"
+        >
+          <a href="">
+            <img
+              class="contact_link_icon"
+              src="/img/icon/InstagramFill.svg"
+              alt=""
+          /></a>
+          <a href="">
+            <img
+              class="contact_link_icon"
+              src="/img/icon/TelegramOutline.svg"
+              alt=""
+          /></a>
+          <a href="">
+            <img
+              class="contact_link_icon"
+              src="/img/icon//WhatsAppOutlined.svg"
+              alt=""
+          /></a>
+        </div>
+        <div class="copyright_block footer_contact_section_item item3">
+          <button class="button footer_section_button footer">PUSH ME</button>
+        </div>
 
-          <rect id="rect1" x="35%" y="55%" width="61%" height="10%" fill="black" />
-          <rect id="rect2" x="35%" y="56%" width="61%" height="9%" fill="black" />
-          <rect id="rect3" x="35%" y="57.5%" width="61%" height="8%" fill="black" />
-
-
-          <rect id="rect4" x="55%" y="4%" width="40%" height="11%" fill="black" />
-          <rect id="rect5" x="55%" y="6%" width="40%" height="9%" fill="black" />
-          <rect id="rect6" x="55%" y="8%" width="40%" height="7%" fill="black" />
-
-
-          <rect id="rect4" x="43%" y="19%" width="13%" height="11%" fill="black"/>
-          <rect id="rect5" x="43%" y="21%" width="13%" height="9%" fill="black"/>
-          <rect id="rect6" x="43%" y="23%" width="13%" height="7%" fill="black"/>
-  
-          <rect id="rect4" x="84%" y="34%" width="11%" height="11%" fill="black" />
-          <rect id="rect5" x="84%" y="36%" width="11%" height="9%" fill="black" />
-          <rect id="rect6" x="84%" y="38%" width="11%" height="7%" fill="black" />
-
-          <rect id="rect4" x="54%" y="49%" width="41%" height="11%" fill="black" />
-          <rect id="rect5" x="54%" y="51%" width="41%" height="9%" fill="black" />
-          <rect id="rect6" x="54%" y="53%" width="41%" height="7%" fill="black" />
-        
-          <rect id="rect4" x="5%" y="64%" width="38%" height="11%" fill="black" />
-          <rect id="rect5" x="5%" y="66%" width="38%" height="9%" fill="black" />
-          <rect id="rect6" x="5%" y="68%" width="38%" height="7%" fill="black" />
-
-          <rect id="rect4" x="59%" y="79%" width="36%" height="11%" fill="black" />
-          <rect id="rect5" x="59%" y="81%" width="36%" height="9%" fill="black" />
-          <rect id="rect6" x="59%" y="83%" width="36%" height="7%" fill="black" />
-
-          <rect id="rect7" x="59%" y="4%" width="36%" height="7%" fill="black" />
-          <rect id="rect7" x="85%" y="10%" width="10%" height="10%" fill="black" />
-          <rect id="rect7" x="7%" y="24%" width="5%" height="27%" fill="black" />
-          <rect id="rect7" x="19%" y="31.5%" width="7%" height="19.5%" fill="black" />
-          <rect id="rect7" x="33%" y="31.5%" width="5%" height="19.5%" fill="black" />
-        </mask>
-      </defs>
-      <rect x="0" y="0" width="100%" height="100%" fill="rgba(0, 0, 0, 1)" mask="url(#block-mask1)" />
-
-
-    
-      <defs>
-        <mask id="text-mask">
-          <rect x="0" y="0" width="100%" height="100%" fill="black" />
-
-          <text id="text1" x="5%" y="20%"   font-size="7vw" fill="white" >We're here</text>
-          <text id="text4" x="5%" y="15%"   font-size="13vw" fill="white" >We're here</text>
- 
-          <text id="text1" x="77%" y="20%"  font-size="7vw" fill="white">to make</text>
-          <text id="text4" x="5%" y="30%"  font-size="13vw" fill="white">to make</text>
-
-          <text id="text1" x="5%" y="35%"  font-size="7vw"  fill="white">healthy</text>
-          <text id="text4" x="60%" y="30%"  font-size="13vw"  fill="white">healthy</text>
-
-          <text id="text1" x="55%" y="35%"  font-size="7vw"  fill="white">living effortless,</text>
-          <text id="text4" x="5%" y="45%"  font-size="13vw"  fill="white">living effortless,</text>
-
-          <text id="text1" x="5%" y="50%"  font-size="7vw" fill="white">so you can</text>
-          <text id="text4" x="5%" y="60%"  font-size="13vw" fill="white">so you can</text>
-
-          <text id="text1" x="70%" y="50%"  font-size="7vw"  fill="white">live longer</text>
-          <text id="text4" x="47%" y="75%"  font-size="13vw"  fill="white">live longer</text>
-          
-          <text id="text1" x="5%" y="65%"  font-size="7vw"  fill="white">and happier</text> 
-          <text id="text4" x="5%" y="90%"  font-size="13vw"  fill="white">and happier</text> 
-
-          <text id="text7" x="5%" y="10%"   font-size="14vw" fill="white" >We're here</text>
-          <text id="text7" x="5%" y="20%"  font-size="14vw" fill="white">to make healthy</text>
-          <text id="text7" x="15%" y="30%"  font-size="14vw"  fill="white">living effortless,</text>
-          <text id="text7" x="47%" y="40%"  font-size="14vw" fill="white">so you can</text>
-          <text id="text7" x="41%" y="50%"  font-size="14vw"  fill="white">and happier</text> 
-        </mask>
-      </defs>
-    <rect x="0" y="0" width="100%" height="100%" fill="rgba(255, 255, 255, 1)" mask="url(#text-mask)" />
-    </svg>
-  </div>
-  
+        <div class="copyright_block footer_contact_section_item item4">
+          <span>©, 2024 Copyright</span>
+        </div>
+        <a
+          class="privacy_policy_link footer_link footer_contact_section_item item5"
+          href=""
+        >
+          Privacy policy</a
+        >
+        <a
+          class="terms_of_use_link footer_link footer_contact_section_item item6"
+          href=" "
+        >
+          Terms of Use</a
+        >
+      </div>
+    </footer>
   </body>
+
+  <script>
+    window.addEventListener("scroll", function () {
+      const header = document.getElementById("header");
+      let scrollPosition = window.scrollY;
+      const maxScroll = 200;
+      let opacity = Math.min(scrollPosition / maxScroll, 0.35);
+      header.style.backgroundColor = `rgba(0, 0, 0, ${opacity})`;
+    });
+  </script>
 </html>
